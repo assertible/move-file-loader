@@ -11,7 +11,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/assertible/webpack-move-file-loader.git"
+        "url": "https://github.com/assertible/move-file-loader.git"
     },
     "scripts": {
         "test": "echo \"No tests implemented\""
