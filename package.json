@@ -1,0 +1,23 @@
+{
+    "name": "move-file-loader",
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "Webpack move file loader",
+    "main": "index.js",
+    "authors": [
+        "Cody Reichert <cody@assertible.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/assertible/webpack-move-file-loader.git"
+    },
+    "scripts": {
+        "test": "echo \"No tests implemented\""
+    },
+    "engines": {
+        "node": ">=4.0.0"
+    },
+    "dependencies": {
+        "loader-utils": "1.1.0"
+    }
+}
