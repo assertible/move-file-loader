@@ -17,11 +17,11 @@ module.exports = function(content) {
     if(!this.emitFile)
         throw new Error("emitFile is required from module system");
 
-    var query = loaderUtils.parseQuery(this.query);
-    var url = loaderUtils.interpolateName(this, query.name || "[hash].[ext]", {
-        context: query.context || this.options.context,
+    var options = loaderUtils.getOptions(this);
+    var url = loaderUtils.interpolateName(this, options.name || "[hash].[ext]", {
+        context: options.context || this.options.context,
         content: content,
-        regExp: query.regExp
+        regExp: options.regExp
     });
     this.emitFile(url, content);
     return content
