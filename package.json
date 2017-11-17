@@ -1,6 +1,6 @@
 {
     "name": "move-file-loader",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "license": "MIT",
     "description": "A Webpack loader to move files from one location to another and return the contents.",
     "main": "index.js",
