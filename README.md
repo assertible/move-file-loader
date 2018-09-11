@@ -17,21 +17,21 @@ $ npm i --save move-file-loader
 
 ## Usage
 
-Add a loader (or, _rule_ for Webpack 2) to your Webpack configuration
-that describes how and where to move the file. The contents of the
-file are returned from the loader.
+Add a loader to your Webpack configuration that describes how and
+where to move the file. The contents of the file are returned from the
+loader.
 
 ```js
 module.exports = {
     ...your webpack config,
     module: {
-        loaders: [{
+        rules: [{
             test: /.json/,
             /**
              * This will move .json files to the [path]/[name].json
              * location after being processed by json-loader
              */
-            loader: "move-file-loader?name=[path][name].json!json"
+            use: "move-file-loader?name=[path][name].json!json"
         }]
     },
     ...the rest of your webpack config
