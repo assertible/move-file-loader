@@ -1,9 +1,9 @@
 {
     "name": "move-file-loader",
-    "version": "0.0.5",
+    "version": "1.0.0",
     "license": "MIT",
     "description": "A Webpack loader to move files from one location to another and return the contents.",
-    "main": "index.js",
+    "main": "lib/index.js",
     "authors": [
         "Cody Reichert <codyreichert@gmail.com>",
         "Christopher Reichert <creichert07@gmail.com>",
@@ -14,6 +14,9 @@
         "url": "https://github.com/assertible/move-file-loader.git"
     },
     "scripts": {
+        "build": "babel src --presets babel-preset-env --out-dir lib",
+        "build:watch": "babel src --presets babel-preset-env --out-dir lib --watch",
+        "prepublish": "npm run build",
         "test": "echo \"No tests implemented\""
     },
     "engines": {
@@ -21,5 +24,9 @@
     },
     "dependencies": {
         "loader-utils": "1.1.0"
+    },
+    "devDependencies": {
+        "babel-cli": "6.26.0",
+        "babel-preset-env": "1.7.0"
     }
 }
